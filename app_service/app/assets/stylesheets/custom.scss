@@ -17,7 +17,6 @@ body{
     background-color: whitesmoke;
     color: black;
 }
-
 section{
     overflow: auto;
 }
@@ -28,9 +27,12 @@ textarea{
 
 .center{
     text-align: center;
-    
+	margin-top:10%;
+    box-shadow: 0 0 20px gray;
+
     h1{
         margin-bottom: 10px;
+		color: #764ba2;
     } 
 }
 
@@ -44,6 +46,7 @@ h1 {
     letter-spacing: -2px;
     margin-bottom: 30px;
     text-align: center;
+	font-family: Arial;
 }
   
 h2 {
@@ -66,6 +69,7 @@ p {
     margin-right: 10px;
     font-size: 1.7em;
     color: #fff;
+	font-family: Georgia;
     text-transform: uppercase;
     letter-spacing: -1px;
     padding-top: 9px;
@@ -101,10 +105,12 @@ footer {
     ul {
       float: right;
       list-style: none;
+	  
     
       li {
         float: left;
         margin-left: 15px;
+		
       }
     
     }
@@ -144,6 +150,7 @@ aside {
         letter-spacing: -1px;
         margin-bottom: 3px;
         margin-top: 0px;
+
       }
     }
   }
@@ -222,7 +229,19 @@ aside {
 
 //the header navbar
 #navbar{
-  background-color: black;
+    background-image:linear-gradient(to bottom right, #764ba2, #9badf7);
+    background-color: #764ba2;
+}
+#navbar li a {
+	color:white;
+}
+
+#navbar li a:hover {
+	background-color:white;
+	color: #ff66cc;	
+}
+.dropdown-menu{
+	background-color: #9badf7;
 }
 
 //customize the page bar on the user index
@@ -365,6 +384,7 @@ aside {
     line-height:30px;
     background-color:#00ced1;
     cursor:pointer;
+	border-radius: 8px;
   }
 
   .crypt-button:hover{
