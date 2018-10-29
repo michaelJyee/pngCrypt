@@ -1,7 +1,17 @@
 class StaticPagesController < ApplicationController
+  include SessionsHelper
+  
   before_action :logged_in_user, only: [:stenApp]
   
   def home
+    if logged_in?
+      #create a var for the logged in user
+      #lets us have access to username and id for application when logged in
+      @userID = current_user.id
+      @userName = current_user.name
+      
+      #puts @userID.to_s + ":" + @userName
+    end
   end
 
   def help
