@@ -24,7 +24,7 @@
           <br>
 
           <label>Image:</label>
-          <input type="file" name="pic" accept="image/*" onchange="clicked()">
+          <input type="file" name="pic" accept="image/png" onchange="clicked()">
 
           <div class="fade-element-in" ng-if="d.type === 'encrypt'">
             <label>Message:</label>
@@ -80,13 +80,17 @@
 
         function clicked(){
           var file = document.querySelector('form input[type="file"]').files[0];
-          if(!file) return
-          getBase64(file).then(
-            data => {
-              console.log("data=>",data);
-              formData.append("imgData",data);
-            }
-          );
+          if(!file || file.type !== "image/png"){
+            document.querySelector('form input[type="file"]').value = "";
+            return;
+          }
+          else{
+            getBase64(file).then(
+              data => {
+                formData.append("imgData",data);
+              }
+            );
+          }
         }
 
         function getBase64(file) {
@@ -121,7 +125,7 @@
               imgB64: formData.get("imgData"),
               type: type,
               msg: msg
-            }
+            };
 
             $http.post(url, data)
             .then(function(response){
@@ -134,7 +138,7 @@
                 that.data.decryptedMessage = response.data.decryptedMessage;
               }
             });
-          }
+          };
         });
       </script>
     </div>
