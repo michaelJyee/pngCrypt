@@ -82,53 +82,56 @@ p {
 
 /* footer */
 footer {
-    margin-top: 10%;
-    padding-top: 5px;
-    border-top: 1px solid #eaeaea;
-   background-image:linear-gradient(to bottom right, #764ba2, #9badf7);
-    background-color: #764ba2;
-	height:auto;
-	width: 100%;
-    overflow: hidden;
-	 position:absolute;
-    left:0;
+
+  margin-top: 10%;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  background-image:linear-gradient(to bottom right, #764ba2, #9badf7);
+  background-color: #764ba2;
+	overflow: hidden;
+  
+  //force to bottom
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  left:0;
     
-    a {
-      color: white;
+  a {
+    color: white;
 	  text-align:center;
-      
-      &:hover {
-        color: #222;
-      }
-    
+   
+    &:hover {
+      color: #222;
     }
+  }
     
-    small {
-      float: left;
-    }
+  small {
+    float: left;
+  }
     
-    ul {
+  ul {
+    float: center;
+    list-style: none;
+    
+    li {
       float: center;
-      list-style: none;
-	  
-    
-      li {
-        float: center;
-        margin-left: 15px;
-		text-align:center;
-		color:white;
-      }
-    
+      margin-left: 15px;
+		  text-align:center;
+		  color:white;
     }
-	p{
+  }
+    
+  p{
 		text-align:center;
 		color:white;
 	}
-	h4 {
-		text-align:center;
-		color:white;
-		font-weight:bold;
-	}
+    
+  h4 {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+  }
 }
 
 /* miscellaneous */
@@ -146,6 +149,7 @@ footer {
 aside {
     section.user_info {
       margin-top: 60px;
+      height: 100%;
     }
     section {
       padding: 10px 0;
