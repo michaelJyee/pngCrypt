@@ -230,19 +230,22 @@ aside {
   list-style: none;
   margin: 0;
   padding: 0;
-  border: solid lightblue 1px;
+  border: solid #764ba2 1px;
   column-count: 3; //update users_controller index :per_page to be divisble by this number
   
   li {
     overflow: hidden;
     padding: 10px;
-    border: 1px solid lightblue;
+    border: 1px solid #764ba2;
     border-bottom: 0;
     height: 100px;
   }
 
   li:hover{
-    background-color:lightblue;
+    background-color:#EED2EE;
+  }
+  a{
+  color:#764ba2;
   }
 }
 
@@ -337,20 +340,30 @@ aside {
   text-align: center;
   margin: 10px;
   padding: 0;
+  
 
   .pagination{
     //the actual bar  
     margin: 0;
     padding: 0;
+	
 
     //each page box other than the current
     li{
-      a{}
+	
+      a{
+	   color: #764ba2;
+	  }
     }
 
     //the active page button
     .active{
-      a{}
+	  a{
+		background-color: #764ba2;
+		color:white;
+		border: solid #764ba2 1px;
+	 
+	  }
     }
 
     //the previous page button
