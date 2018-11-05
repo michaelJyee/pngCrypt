@@ -83,19 +83,15 @@ p {
 /* footer */
 footer {
 
-  margin-top: 10%;
+  margin-top: 5%;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   background-image:linear-gradient(to bottom right, #764ba2, #9badf7);
   background-color: #764ba2;
 	overflow: hidden;
   
-  //force to bottom
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 15%;
-  left:0;
+  height: auto;
     
   a {
     color: white;
@@ -228,7 +224,7 @@ aside {
 /* Users index */
 .users {
   list-style: none;
-  margin: 0;
+  margin: 2%;
   padding: 0;
   border: solid #764ba2 1px;
   column-count: 3; //update users_controller index :per_page to be divisble by this number
@@ -247,6 +243,11 @@ aside {
   a{
   color:#764ba2;
   }
+}
+
+.userContainer{
+  padding: 4%;
+  min-height: 500px;
 }
 
 //the header navbar
@@ -333,6 +334,12 @@ aside {
     border:1px solid white;
 }
 //
+
+.container{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
 //customize the page bar on the user index
 .userPageBar{
