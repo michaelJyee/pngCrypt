@@ -80,6 +80,11 @@ p {
     }
 }
 
+.header{
+  padding: 10px;
+  padding-top: 0;
+}
+
 /* footer */
 footer {
 
@@ -243,6 +248,12 @@ aside {
   a{
   color:#764ba2;
   }
+}
+
+.row{
+  min-height: 500px;
+  margin: 15px;
+  padding: 10px;
 }
 
 .userContainer{

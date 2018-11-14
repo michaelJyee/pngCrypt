@@ -1,10 +1,11 @@
 <% provide(:title, "Help") %>
+<div class="row">
 <h1>Help</h1>
 <p>
   <h3>Getting Started</h3>
   <ol>
     <li><%= link_to "Create an account", signup_path%>  so that you can access the application</li>
-    <li>Then access the stegonography app <%= link_to  "here", stenApp_path %></li>
+    <li>Then access the stegonography app <%= link_to  "here", root_path %></li>
     <li>Select the PNG image you want to use in the application</li>
     <li>Select the encrypt option to hide a message in an uploaded image, or select the decrypt option to look for a message in the given image</li>
     <li>If you are choosing to encrypt, be sure to also provide the message to encrypt in the message field</li>
@@ -16,3 +17,4 @@
   <p>Visit our <%= link_to "About",   about_path %> page to get a detailed description of what we do and how it works.<br/>
   You can also <a href="https://github.com/michaelJyee/pngCrypt" target = "_blank"> click here</a> to view our source code on GitHub!</p>
 </p>
+</div>
