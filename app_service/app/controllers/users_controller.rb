@@ -26,7 +26,7 @@ class UsersController < ApplicationController
       #the following line redirects to the user profile
       #redirect_back_or @user
       #the following line redirects to the application page
-      redirect_back_or stenApp_path
+      redirect_back_or root_path
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
